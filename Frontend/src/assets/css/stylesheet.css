@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Ivy Journal';
+    src: url('./fonts/IvyJournal-Bold.eot');
+    src: local('Ivy Journal SemiBold Italic'), local('IvyJournal-SemiBoldItalic'),
+        url('./fonts/IvyJournal-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/IvyJournal-SemiBoldItalic.woff2') format('woff2'),
+        url('./fonts/IvyJournal-SemiBoldItalic.woff') format('woff'),
+        url('./fonts/IvyJournal-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ivy Journal';
+    src: url('./fonts/IvyJournal-Regular.eot');
+    src: local('Ivy Journal Regular'), local('IvyJournal-Regular'),
+        url('./fonts/IvyJournal-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/IvyJournal-Regular.woff2') format('woff2'),
+        url('./fonts/IvyJournal-Regular.woff') format('woff'),
+        url('./fonts/IvyJournal-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ivy Journal';
+    src: url('./fonts/IvyJournal-LightItalic.eot');
+    src: local('Ivy Journal Light Italic'), local('IvyJournal-LightItalic'),
+        url('./fonts/IvyJournal-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/IvyJournal-LightItalic.woff2') format('woff2'),
+        url('./fonts/IvyJournal-LightItalic.woff') format('woff'),
+        url('./fonts/IvyJournal-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ivy Journal';
+    src: url('./fonts/IvyJournal-Bold.eot');
+    src: local('Ivy Journal Bold'), local('IvyJournal-Bold'),
+        url('./fonts/IvyJournal-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/IvyJournal-Bold.woff2') format('woff2'),
+        url('./fonts/IvyJournal-Bold.woff') format('woff'),
+        url('./fonts/IvyJournal-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ivy Journal';
+    src: url('./fonts/IvyJournal-ThinItalic.eot');
+    src: local('Ivy Journal Thin Italic'), local('IvyJournal-ThinItalic'),
+        url('./fonts/IvyJournal-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/IvyJournal-ThinItalic.woff2') format('woff2'),
+        url('./fonts/IvyJournal-ThinItalic.woff') format('woff'),
+        url('./fonts/IvyJournal-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ivy Journal';
+    src: url('./fonts/IvyJournal-BoldItalic.eot');
+    src: local('Ivy Journal Bold Italic'), local('IvyJournal-BoldItalic'),
+        url('./fonts/IvyJournal-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/IvyJournal-BoldItalic.woff2') format('woff2'),
+        url('./fonts/IvyJournal-BoldItalic.woff') format('woff'),
+        url('./fonts/IvyJournal-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ivy Journal';
+    src: url('./fonts/IvyJournal-Italic.eot');
+    src: local('Ivy Journal Italic'), local('IvyJournal-Italic'),
+        url('./fonts/IvyJournal-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/IvyJournal-Italic.woff2') format('woff2'),
+        url('./fonts/IvyJournal-Italic.woff') format('woff'),
+        url('./fonts/IvyJournal-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ivy Journal';
+    src: url('./fonts/IvyJournal-Light.eot');
+    src: local('Ivy Journal Light'), local('IvyJournal-Light'),
+        url('./fonts/IvyJournal-Light.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/IvyJournal-Light.woff2') format('woff2'),
+        url('./fonts/IvyJournal-Light.woff') format('woff'),
+        url('./fonts/IvyJournal-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ivy Journal';
+    src: url('./fonts/IvyJournal-Thin.eot');
+    src: local('Ivy Journal Thin'), local('IvyJournal-Thin'),
+        url('./fonts/IvyJournal-Thin.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/IvyJournal-Thin.woff2') format('woff2'),
+        url('./fonts/IvyJournal-Thin.woff') format('woff'),
+        url('./fonts/IvyJournal-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ivy Journal';
+    src: url('./fonts/IvyJournal-SemiBold.eot');
+    src: local('Ivy Journal SemiBold'), local('IvyJournal-SemiBold'),
+        url('./fonts/IvyJournal-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/IvyJournal-SemiBold.woff2') format('woff2'),
+        url('./fonts/IvyJournal-SemiBold.woff') format('woff'),
+        url('./fonts/IvyJournal-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+

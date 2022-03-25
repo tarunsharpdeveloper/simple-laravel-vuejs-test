@@ -1,0 +1,79 @@
+{
+  "name": "intele-travel",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Project to facilitate tour by offering car-rentals, flights and hotels",
+  "author": "InteleTravel <inteletravel@example.com>",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "axios": "^0.18.0",
+    "browser-sync": "^2.26.13",
+    "jquery": "^3.5.1",
+    "moment": "^2.29.1",
+    "node-sass": "^4.14.1",
+    "sass": "~1.32.*",
+    "sass-loader": "^7.3.1",
+    "serve-static": "^1.14.1",
+    "socket.io-client": "^4.2.0",
+    "v-mask": "^2.2.4",
+    "vue": "^2.6.12",
+    "vue-awesome-notifications": "^3.1.1",
+    "vue-carousel": "^0.18.0",
+    "vue-loading-overlay": "^3.4.2",
+    "vue-router": "^3.4.9",
+    "vue-spinner": "^1.0.4",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.6.0",
+    "vuex-persistedstate": "^4.0.0-beta.3"
+  },
+  "devDependencies": {
+    "@sentry/webpack-plugin": "^1.17.1",
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-plugin-e2e-cypress": "^3.12.1",
+    "@vue/cli-plugin-eslint": "^3.12.1",
+    "@vue/cli-plugin-unit-mocha": "^3.12.1",
+    "@vue/cli-service": "^3.12.1",
+    "@vue/eslint-config-prettier": "^3.0.5",
+    "@vue/test-utils": "^1.1.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.16.0",
+    "vue-cli-plugin-dll": "~1.1.12",
+    "vue-template-compiler": "^2.6.12",
+    "webpack-stream": "^6.1.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "plugin:prettier/recommended",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 2
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}

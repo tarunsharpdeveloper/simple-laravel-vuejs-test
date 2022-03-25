@@ -1,0 +1,9 @@
+.search-radio-buttons .v-messages__message {
+	width: 80%;
+	margin-left: 30px;
+	color: red!important;
+}
+.flex-coloumn{
+	display: flex;
+	flex-direction: column;
+}
