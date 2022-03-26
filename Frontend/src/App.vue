@@ -6,7 +6,20 @@
 
     <section class="list-wrapper">
       <span>
-    
+        <div>
+        <input type="date" class="input-new-list"  v-model="date"
+        @change="getListData" /> 
+
+        </div> <br/>
+
+        <div>
+          <select  class="input-new-list"  v-model="status" @change="getListData" style="height: 34px;">
+            <option value="">Select State</option>
+            <option value="0">Active</option>
+            <option value="1">Inactive</option>
+          </select>
+
+        </div> <br/>
       <draggable
         :options="{ group: 'lists' }"
         group="lists"
@@ -30,9 +43,10 @@
         placeholder="Create a List"
         v-model="listName"
         @keyup.enter="createList"
+        style="margin-top: 100px;"
       />
       <div style="position: absolute; z-index: 999; text-align:center; top:300px; left:600px;" >
-      <pulse-loader :loading="loading" :color="color"></pulse-loader>
+      <pulse-loader :loading="loading" :color="color" ></pulse-loader>
 
       </div>
     </section>
@@ -66,18 +80,19 @@ export default {
     return {
       listName: "",
       listdata:"",
-      Token:"",
+      token:"ktX3edecXQG6b7ehLrAXhxxqlwUPGNzHgLuois8OJX0lxPKQftKMXbZjEks8JgPc",
       date:"",
       color:"white",
-      loading:false
+      loading:false,
+      status:0
     };
   },
 
   mounted: function() {
-       if (this.$route.query.token) {
-          let token = this.$route.query.token;
-          this.token = token;
-       }
+      //  if (this.$route.query.token) {
+      //     let token = this.$route.query.token;
+      //     this.token = token;
+      //  }
       this.getListData();
     
   },
@@ -113,14 +128,19 @@ export default {
     },
 
     getListData(){
-      this.loading=true;
+         this.loading=true;
        let reqHeaders = {
         headers: {
           'Content-Type': 'application/json',
            Authorization: 'Bearer ' + this.token
         }
       };
-        cartServices.getAllList(reqHeaders).then(rsp => {
+
+      let payload={
+          created_at:this.date,
+          status:this.status        
+      }
+        cartServices.getAllList(payload, reqHeaders).then(rsp => {
           if(rsp.data.success == true &&
             rsp.data.message == 'list get successfully'){
                this.loading=false;

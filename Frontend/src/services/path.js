@@ -1,4 +1,4 @@
-const baseURL = 'http://127.0.0.1:8000/api/';   
+const baseURL = 'https://ewayits.com/test_laravel/backend/api/';   
 
 export default {
     baseURL,

@@ -8,8 +8,8 @@ const getAllCars = () => apiClient.get();
 
 const getCar = car_id => apiClient.get('', { car_id });
 
-const getAllList = (reqHeaders) =>
-    apiClient.get('getList', reqHeaders);
+const getAllList = (payload,reqHeaders) =>
+    apiClient.get('getList?createat='+payload.created_at+"&status="+payload.status, reqHeaders);
 
 const createList = (payload ,reqHeaders) => 
     apiClient.post('createList', payload, reqHeaders);

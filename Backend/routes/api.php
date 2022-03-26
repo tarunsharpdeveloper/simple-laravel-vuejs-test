@@ -9,22 +9,12 @@ Route::get('getList', [ApiController::class, 'getList'])->middleware('Authtoken'
 
 Route::post('createList', [ApiController::class, 'CreateList'])->middleware('Authtoken');
 
-Route::post('deleteList', [ApiController::class, 'DeleteList'])->middleware('Authtoken');;
+Route::post('deleteList', [ApiController::class, 'DeleteList'])->middleware('Authtoken');
 
 Route::post('createCard', [ApiController::class, 'createCard'])->middleware('Authtoken');
 
 Route::post('DeleteCard', [ApiController::class, 'DeleteCard'])->middleware('Authtoken');
 
-// Route::get('/backupdatabase', function () {
-
-//     // $exitCode = Artisan::call('db:backup');
-
-//     Spatie\DbDumper\Databases\MySql::create()
-//     ->setDbName(env('DB_DATABASE'))
-//     ->setUserName(env('DB_USERNAME'))
-//     ->setPassword(env('DB_PASSWORD'))
-//     ->dumpToFile('dump.sql');
-// });
 
 /*
 |--------------------------------------------------------------------------

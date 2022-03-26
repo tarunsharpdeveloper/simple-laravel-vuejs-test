@@ -107,10 +107,10 @@ const responseInterceptor = response => {
    const urlParams = new URLSearchParams(window.location.search);
    const myParam = urlParams.get('token');
     if(myParam != null && myParam != ''){
-        const hasKey = "data" in response.data;
-        if(hasKey){
-            evBus.$emit('muteLoading');
-        }
+        // const hasKey = "data" in response.data;
+        // if(hasKey){
+        //     evBus.$emit('muteLoading');
+        // }
     } else {
         evBus.$emit('muteLoading');
     }

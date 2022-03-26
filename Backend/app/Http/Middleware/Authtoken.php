@@ -16,10 +16,10 @@ class Authtoken
      */
     public function handle(Request $request, Closure $next)
     {
-        define("SECRET", env('JWT_SECRET'));
+        $envToken =  env('JWT_SECRET', 'ktX3edecXQG6b7ehLrAXhxxqlwUPGNzHgLuois8OJX0lxPKQftKMXbZjEks8JgPc');
         $token = $request->bearerToken();
         
-        if(SECRET === $token) {
+        if($envToken == $token) {
             return $next($request);
         } else{
             return response()->json([

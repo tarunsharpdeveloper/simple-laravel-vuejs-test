@@ -1,9 +1,10 @@
 module.exports = {
+      publicPath:  '/test_laravel/',
     devServer: {
         proxy: process.env.VUE_APP_PROXY,
         host: process.env.VUE_APP_HOST,
         port: process.env.VUE_APP_PORT,
-        https: false // process.env.VUE_APP_IS_HTTPS
+        https: true // process.env.VUE_APP_IS_HTTPS
     },
     css: {
         loaderOptions: {
